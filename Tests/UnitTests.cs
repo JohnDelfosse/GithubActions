@@ -37,8 +37,9 @@ namespace GithubActionsLab
         [Test]
         public void Sub_ValidDelfosse()
         {
-            //first one is wrong, should be zero
-            Assert.AreEqual(0, Program.Subtract("1", "2"));
+
+            //first one is wrong, should be -1
+            Assert.AreEqual(-1, Program.Subtract("1", "2"));
             Assert.AreEqual(1, Program.Subtract("3", "2"));
             Assert.AreEqual(3, Program.Subtract("5", "2"));
         }
